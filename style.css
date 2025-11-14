@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: orange;
+}
+.logo{
+    width: 120px;
+    height: auto;
+    margin-left: 50px;
+    cursor: pointer;
+}
+ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    position: relative;
+    
+}
+.barnav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 100px;
+    
+}
+.bar{
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.text{
+    margin-left:260px;
+    margin-top: 100px;
+}
+p{
+    color: white;
+}
+.text-first{
+    font-size: 40px;
+    margin-top: 50px;
+    
+}
+.text-2nd{
+    font-size: 17px;
+}
+
+.carousel-section{
+    display: flex;
+    position: absolute;
+    left: 900px;
+    top: 10px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    padding: 40px;
+}
+
+.Boisson{
+    position: absolute;
+    bottom:70px;
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+
+.carousel-wrapper{
+    width: 350px;
+    height: 350px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.carousel-display{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-display img{
+    max-width: 380px;
+    max-height: 360px;
+    object-fit: contain;
+}
+
+.button-controls{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.slide{
+    display: flex;
+    overflow: hidden;
+    width: 350px;
+    height: 350px;
+    position: relative;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.slide .image{
+    min-width: 350px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s ease;
+    flex-shrink: 0;
+}
+
+.slide .image img{
+    max-width: 250px;
+    max-height: 300px;
+    object-fit: contain;
+}
+
+.commander{
+    font-size: 15px;
+    padding: 7px 8px;
+    width: 180px;
+    background-color: white;
+    color: orange;
+    margin-left: 260px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 20px;
+}
+.commander:hover{
+    color: white;
+    border: white  2px solid;
+    background-color: orange;
+    transition: ease  0.5s;
+}
+.change{
+    position: relative;
+    font-size: 20px;
+    background-color: white;
+    color: orange;
+    border: none;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.change:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: scale(1.1);
+}
+
+.changes{
+    position: relative;
+    font-size: 20px;
+    background-color: white;
+    color: orange;
+    border: none;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.changes:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: scale(1.1);
+}
+.switch:hover .change,
+.switch:hover .changes{
+   background-color: orange;
+   border: white 1px solid;
+   color: white;
+   transition: ease 0.5s;
+
+}
